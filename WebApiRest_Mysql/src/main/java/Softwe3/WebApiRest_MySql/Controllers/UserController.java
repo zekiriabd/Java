@@ -1,10 +1,10 @@
-package Softwe3.GetWebApiRest.Controllers;
+package Softwe3.WebApiRest_MySql.Controllers;
 
-import Softwe3.GetWebApiRest.Models.User;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import Softwe3.WebApiRest_MySql.Database.UserDataAccess;
+import Softwe3.WebApiRest_MySql.Models.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +12,21 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/user")
+
 public class UserController {
+
+
+    @Autowired
+    private UserDataAccess userDataAccess;
+
+    @PostMapping("/SetUser")
+    public void SetUser(@RequestBody User user){
+        userDataAccess.Insert(user);
+    }
 
     @GetMapping("/getUsers")
     public List<User> getUsers(){
-        List<User> users = new ArrayList<>();
-        users.add(new User(1,"Zekiri","Abdelali"));
-        users.add(new User(2,"Ali","Aloui"));
-        users.add(new User(3,"Raouf","Rahich"));
-        return users;
+        return userDataAccess.GetAllUsers();
     }
 
     @GetMapping("/getUserById/{id}")

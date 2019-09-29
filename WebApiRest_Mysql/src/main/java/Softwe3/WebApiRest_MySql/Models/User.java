@@ -1,4 +1,4 @@
-package Softwe3.GetWebApiRest.Models;
+package Softwe3.WebApiRest_MySql.Models;
 
 public class User {
     private int id;
