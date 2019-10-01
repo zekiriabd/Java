@@ -12,9 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/user")
-
 public class UserController {
-
 
     @Autowired
     private UserDataAccess userDataAccess;
@@ -25,20 +23,34 @@ public class UserController {
     }
 
     @GetMapping("/getUsers")
-    public List<User> getUsers(){
+    public List<User>  getUsers(){
         return userDataAccess.GetAllUsers();
     }
 
-    @GetMapping("/getUserById/{id}")
-    public User getUserById(@PathVariable String id){
-        //---------------------------------------------------------
-        List<User> users = new ArrayList<>();
-        users.add(new User(1,"Zekiri","Abdelali"));
-        users.add(new User(2,"Ali","Aloui"));
-        users.add(new User(3,"Raouf","Rahich"));
-        //---------------------------------------------------------
-        User user = users.stream().filter(u -> u.getId() == Integer.parseInt(id)).findAny().orElse(null);
-        return user;
+    @GetMapping("/delUser/{id}")
+    public int  delUser(@PathVariable  int id){
+        return userDataAccess.delUser(id);
     }
+
+    @PostMapping("/delUser")
+    public int  updateUser(@RequestBody User user){
+        return userDataAccess.updateUser(user);
+    }
+
+    @GetMapping("/callUsers")
+    public List<User> callUsers(){
+        return userDataAccess.callUsers();
+    }
+
+    @GetMapping("/CallUser/{id}")
+    public String CallUser(@PathVariable  int id){
+        return userDataAccess.CallUser(id);
+    }
+
+
+
+
+
+
 
 }
