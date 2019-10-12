@@ -38,7 +38,7 @@ public class UserDataAccess {
     }
 
     public int Insert(User user) {
-        return sql.update("insert into user (id, firstname, lastname) " + "values(?, ?, ?)",
+        return sql.update("insert into user (id, firstname, lastname) values(?, ?, ?)",
                 new Object[] {user.getId(), user.getFirstName(), user.getLastName()});
     }
 
