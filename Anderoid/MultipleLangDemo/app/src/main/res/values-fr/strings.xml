@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">َApp Multi Lang FR</string>
+    <string name="lb_Hello" translatable="false">salute</string>
+    <string name="tx_Email" translatable="false">mail</string>
+    <string name="tx_FirstName" translatable="false">Nom</string>
+    <string name="tx_LastName" translatable="false">Prénom</string>
+</resources>

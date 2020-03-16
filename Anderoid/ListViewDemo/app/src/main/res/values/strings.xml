@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Add_Baby">Add Baby</string>
+    <string name="Message">Message</string>
+    <string name="Edit_baby">Edit baby</string>
+    <string name="Exit">Exit</string>
+
+</resources>

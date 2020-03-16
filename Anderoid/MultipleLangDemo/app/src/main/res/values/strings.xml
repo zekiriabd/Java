@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">Multiple Lang</string>
+    <string name="lb_Hello" translatable="false">hello world</string>
+    <string name="tx_Email" translatable="false">email adress</string>
+    <string name="tx_FirstName" translatable="false">First Name</string>
+    <string name="tx_LastName" translatable="false">Last Name</string>
+</resources>

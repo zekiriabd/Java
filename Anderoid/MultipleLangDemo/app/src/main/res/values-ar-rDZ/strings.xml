@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق تعدد اللغات</string>
+
+    <string name="lb_Hello" translatable="false">مرحبا بكم</string>
+    <string name="tx_Email" translatable="false">البريد الالكتروني</string>
+    <string name="tx_FirstName" translatable="false">الاسم</string>
+    <string name="tx_LastName">اللقب</string>
+
+</resources>

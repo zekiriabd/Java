@@ -1,0 +1,17 @@
+
+^
+java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨þÿÿÿÿ8è˜Ÿ–.
+U
+java:S1128"3Remove this unused import 'android.graphics.Color'.(øãíòþÿÿÿÿ8”Ò·†.
+E
+java:S1172"(Remove this unused method parameter "v".(§Â¿€8®ÕÈ–.
+f
+java:S1128"DRemove this unused import 'android.graphics.drawable.ColorDrawable'.(ÖŸÂ«øÿÿÿÿ8”Ò·†.
+a
+java:S1128"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8°£È–.
+T
+java:S1128	"7Remove this unused import 'android.view.WindowManager'.(Ü³‹Å8¤®ž–.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8æûÐ–.
+`
+java:S1128">Remove this unused import 'android.content.pm.PackageManager'.(€®¥õÿÿÿÿÿ8£Ç‡×Œ.
