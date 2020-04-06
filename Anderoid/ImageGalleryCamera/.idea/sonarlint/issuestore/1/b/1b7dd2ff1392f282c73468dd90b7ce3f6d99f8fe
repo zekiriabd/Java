@@ -1,0 +1,16 @@
+
+m
+java:S13017"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8öˆÈ”.
+>
+java:S1170"!Make this final field static too.(Òø½Ï8’ƒ¹”.
+z	java:S116"^Rename this field "CAMERA_REQUEST_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¬©8“óË”.
+C	java:S1317""Add a default case to this switch.(×ö³–úÿÿÿÿ8öˆÈ”.
+>
+java:S1170"!Make this final field static too.(Ë¬©8“óË”.
+H
+java:S1172!"+Remove this unused method parameter "view".(ÿ‚Û»8ªö´”.
+M
+java:S1172&"+Remove this unused method parameter "view".(×ò»Ğşÿÿÿÿ8şÊ”.
+{	java:S116"_Rename this field "GALLERY_REQUEST_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òø½Ï8’ƒ¹”.
+k
+java:S1128"NRemove this unused import 'pub.devrel.easypermissions.AfterPermissionGranted'.(ÿŸÅï8ø”ñ”.
