@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/babyV"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="10dp"
+>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/baby_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+    >
+        <TextView
+                android:id="@+id/baby_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+        />
+        <TextView
+                android:id="@+id/baby_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+        />
+
+    </LinearLayout>
+
+    <Button
+            android:text="..."
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+    />
+
+</androidx.cardview.widget.CardView>

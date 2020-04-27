@@ -1,0 +1,8 @@
+
+]
+java:S1854;";Remove this useless assignment to local variable "account".(»±Åøÿÿÿÿ8¶ÑôÊ™.
+q	java:S116"URename this field "RC_SIGN_IN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª«½¯8Ò¥áÊ™.
+N
+java:S1128",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8²«äÉ™.
+N
+java:S1481;",Remove this unused "account" local variable.(»±Åøÿÿÿÿ8¶ÑôÊ™.

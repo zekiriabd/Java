@@ -1,0 +1,11 @@
+
+T
+java:S1128"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8€Å‚”™.
+£
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó³€˜úÿÿÿÿ8çÎ¯”™.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8€Å‚”™.
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(èì±Ö8ÒÉĞœ™.
+W
+java:S1128"5Remove this unused import 'com.facebook.FacebookSdk'.(™áÂ¹úÿÿÿÿ8€Å‚”™.
+]	java:S125+"<This block of commented-out lines of code should be removed.(€ïÃıÿÿÿÿ8…•ŸŸ™.
