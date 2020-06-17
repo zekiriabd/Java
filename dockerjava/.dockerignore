@@ -1,0 +1,5 @@
+.git/
+.mvn/
+src/
+target/
+!target/*.jar

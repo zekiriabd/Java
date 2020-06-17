@@ -1,0 +1,22 @@
+server:
+  port: 7000
+spring:
+    application:
+      name: api-gateway
+    cloud:
+      discovery:
+        enabled: false
+      gateway:
+        routes:
+          - id: productModule
+            uri: http://mecroecommerce.products:7001/
+            predicates:
+              - Path=/product/**
+          - id: customersModule
+            uri: http://mecroecommerce.customers:7002/
+            predicates:
+              - Path=/customer/**
+          - id: ordersModule
+            uri: http://mecroecommerce.orders:7003/
+            predicates:
+              - Path=/orders/**

@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  sqldb:
+    image: mysql
+    restart: always
+    container_name: sqldb
+    ports:
+      - 3300:3300
+    environment:
+      MYSQL_DATABASE: productmanagement
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 123456
+  mecroecommerce.orders:
+    image: ${DOCKER_REGISTRY-}mecroecommerceorders
+    build:
+      context: .
+      dockerfile: ../Orders/Dockerfile
+    ports:
+      - 7003:7003
+  mecroecommerce.customers:
+    image: ${DOCKER_REGISTRY-}mecroecommercecustomers
+    build:
+      context: .
+      dockerfile: ../Customers/Dockerfile
+    ports:
+      - 7002:7002
+  mecroecommerce.products:
+    image: ${DOCKER_REGISTRY-}mecroecommerceproducts
+    build:
+      context: .
+      dockerfile: ../Products/Dockerfile
+    ports:
+      - 7001:7001
+    links:
+      - sqldb
+  mecroecommerce.apigateway:
+    image: ${DOCKER_REGISTRY-}mecroecommerceapigateway
+    build:
+      context: .
+      dockerfile: ../ApiGateway/Dockerfile
+    ports:
+      - 7000:7000
